@@ -25,14 +25,17 @@
 			</section>
 			<section class="form">
 				<form action="" method="post">
-					<label for="email">Email address</label>
+					<div class="labels"><label for="email">Email address</label></div>
+
 					<input
-						type="text"
+						type="email"
 						name="email"
 						id="email"
 						placeholder="email@company.com"
 					/>
-					<button type="submit">Subscribe to montly newsletter</button>
+					<button type="submit" class="submit">
+						Subscribe to montly newsletter
+					</button>
 				</form>
 			</section>
 		</div>
@@ -42,10 +45,11 @@
 			<img src="./assets/images/icon-success.svg" alt="" />
 			<h1>Thanks for subscribing!</h1>
 			<p>
-				A confirmation letter has be sent to ash@loremcompany.com. Please open
-				it and click the button inside to confirm your subscription
+				A confirmation letter has be sent to
+				<span id="subscriber">ash@loremcompany.com</span>. Please open it and
+				click the button inside to confirm your subscription
 			</p>
-			<button>Dismiss message</button>
+			<button class="dismiss">Dismiss message</button>
 		</div>
 		<script src="app.js"></script>
 	</body>

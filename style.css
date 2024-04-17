@@ -179,8 +179,15 @@ li {
 	margin-bottom: 0.75rem;
 }
 
-label {
+.labels {
 	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.labels p {
+	color: var(--tomato);
 }
 
 input {
