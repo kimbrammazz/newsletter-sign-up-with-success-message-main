@@ -7,7 +7,7 @@ const dismiss = document.querySelector(".dismiss");
 
 window.addEventListener("DOMContentLoaded", () => {
 	success.style.display = "none";
-	signup.style.display = "block";
+	// signup.style.display = "block";
 });
 
 // validation

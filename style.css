@@ -149,6 +149,7 @@ html {
 	font-size: 1.25rem;
 	max-width: 375px;
 	margin: auto;
+	justify-content: center;
 	line-height: 1.75rem;
 }
 
@@ -163,6 +164,7 @@ h1 {
 	font-size: 3rem;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+	line-height: 3rem;
 }
 
 ul {
@@ -191,8 +193,8 @@ li {
 }
 
 input {
-	display: block;
-	width: 100%;
+	/* display: block; */
+	width: 96%;
 	height: 3rem;
 	border-radius: 0.5rem;
 	padding-left: 1rem;
@@ -209,4 +211,38 @@ button {
 	background-color: var(--dark-slate-grey);
 	color: var(--white);
 	font-size: 1.15rem;
+}
+
+#success {
+	margin-top: 5rem;
+}
+
+.dismiss {
+	margin-top: 2rem;
+}
+/* end of mobile design */
+
+/* styles for larger screens */
+@media (min-width: 375px) {
+	.container {
+		max-width: 1440px;
+		width: 90%;
+		height: 700px;
+		margin: 0 auto;
+		outline: dashed 1px black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-image {
+		content: url("./assets/images/illustration-sign-up-desktop.svg");
+		float: right;
+		width: 40%;
+		height: 500px;
+	}
+	.left {
+		float: left;
+		width: 55%;
+	}
 }
