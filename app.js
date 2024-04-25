@@ -3,6 +3,7 @@ const success = document.querySelector("#success");
 let email = document.querySelector("#email");
 const submitBtn = document.querySelector(".submit");
 const subscriber = document.querySelector("#subscriber");
+const dismiss = document.querySelector(".dismiss");
 
 window.addEventListener("DOMContentLoaded", () => {
 	success.style.display = "none";
@@ -24,6 +25,7 @@ const errorMessage = () => {
 	labels.appendChild(errorElement);
 };
 
+// function to display success message
 const displaySuccess = () => {
 	// console.log("displaySuccess function run");
 	success.style.display = "block";
@@ -31,6 +33,7 @@ const displaySuccess = () => {
 	subscriber.innerHTML = `${email.value}`;
 };
 
+// function to check validation and display success message
 submitBtn.addEventListener("click", (e) => {
 	e.preventDefault();
 	if (!validEmail(email.value)) {
@@ -40,4 +43,9 @@ submitBtn.addEventListener("click", (e) => {
 		console.log("successful");
 		displaySuccess();
 	}
+});
+
+// function to dismiss success message
+dismiss.addEventListener("click", () => {
+	window.location.reload();
 });
