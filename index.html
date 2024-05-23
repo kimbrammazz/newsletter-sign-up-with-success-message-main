@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<title>Newsletter sign up</title>
-	</head>
-	<body>
-		<!-- newsletter sign up page -->
-		<div class="container" id="signup">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Newsletter sign up</title>
+</head>
+
+<body>
+	<!-- newsletter sign up page -->
+	<div class="container" id="signup">
+		<div class="right">
 			<section class="hero-image"></section>
-			<div class="left">
-				<section class="info">
-					<h1>Stay updated!</h1>
-					<p>Join 60,000+ product managers receiving monthly updates on:</p>
-					<ul>
-						<li>Product discovery and building what matters</li>
-						<li>Measuring to ensure updates are a success</li>
-						<li>And much more!</li>
-					</ul>
-				</section>
-				<section class="form">
-					<form action="" method="post">
-						<div class="labels"><label for="email">Email address</label></div>
-
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="email@company.com"
-						/>
-						<button type="submit" class="submit">
-							Subscribe to montly newsletter
-						</button>
-					</form>
-				</section>
-			</div>
 		</div>
-		<!-- end of signup page -->
+		<div class="left">
+			<section class="info">
+				<h1>Stay updated!</h1>
+				<p>Join 60,000+ product managers receiving monthly updates on:</p>
+				<ul>
+					<li>Product discovery and building what matters</li>
+					<li>Measuring to ensure updates are a success</li>
+					<li>And much more!</li>
+				</ul>
+			</section>
+			<section class="form">
+				<form action="" method="post">
+					<div class="labels"><label for="email">Email address</label></div>
 
-		<!-- success message -->
-		<div class="container" id="success">
-			<img src="./assets/images/icon-success.svg" alt="" />
-			<h1>Thanks for subscribing!</h1>
-			<p>
-				A confirmation letter has be sent to
-				<span id="subscriber">ash@loremcompany.com</span>. Please open it and
-				click the button inside to confirm your subscription
-			</p>
-			<button class="dismiss">Dismiss message</button>
+					<input type="email" name="email" id="email" placeholder="email@company.com" />
+					<button type="submit" class="submit">
+						Subscribe to montly newsletter
+					</button>
+				</form>
+			</section>
 		</div>
-		<!-- end of success message -->
-		<script src="app.js"></script>
-	</body>
+	</div>
+	<!-- end of signup page -->
+
+	<!-- success message -->
+	<div class="container" id="success">
+		<img src="./assets/images/icon-success.svg" alt="" />
+		<h1>Thanks for subscribing!</h1>
+		<p>
+			A confirmation letter has be sent to
+			<span id="subscriber">ash@loremcompany.com</span>. Please open it and
+			click the button inside to confirm your subscription
+		</p>
+		<button class="dismiss">Dismiss message</button>
+	</div>
+	<!-- end of success message -->
+	<script src="app.js"></script>
+</body>
+
 </html>
