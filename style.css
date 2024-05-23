@@ -147,14 +147,16 @@ html {
 .container {
 	font-family: "RobotoRegular", arial, sans-serif;
 	font-size: 1.25rem;
-	max-width: 375px;
-	margin: auto;
+	max-width: 750px;
+	margin: 0 auto;
 	justify-content: center;
 	line-height: 1.75rem;
 }
 
 .hero-image {
 	content: url("./assets/images/illustration-sign-up-mobile.svg");
+	width: 100%;
+	height: auto;
 }
 
 h1 {
@@ -223,7 +225,7 @@ button {
 /* end of mobile design */
 
 /* styles for larger screens */
-@media (min-width: 375px) {
+@media (min-width: 750px) {
 	.container {
 		max-width: 1440px;
 		width: 90%;
@@ -239,14 +241,19 @@ button {
 
 	.hero-image {
 		content: url("./assets/images/illustration-sign-up-desktop.svg");
+		width: 100%;
+		height: auto;
+		max-height: 530px;
 	}
 
 	.right {
 		float: right;
 		margin-left: 1rem;
+		flex-basis: 50%;
 	}
 
 	.left {
 		float: left;
+		flex-basis: 50%;
 	}
 }
