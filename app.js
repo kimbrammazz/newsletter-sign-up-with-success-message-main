@@ -23,6 +23,9 @@ const errorMessage = () => {
 	errorElement.appendChild(errorText);
 	const labels = document.querySelector(".labels");
 	labels.appendChild(errorElement);
+	// add class to input
+	const errorInput = document.querySelector("input");
+	errorInput.classList.add("error");
 };
 
 // function to display success message

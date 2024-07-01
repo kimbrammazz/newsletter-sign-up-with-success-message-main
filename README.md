@@ -15,3 +15,7 @@ Your users should be able to:
   - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+
+## The final product
+
+https://kimbrammazz.github.io/newsletter-sign-up-with-success-message-main/
